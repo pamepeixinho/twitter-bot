@@ -1,0 +1,26 @@
+{
+  "name": "twitter-bot",
+  "version": "1.0.0",
+  "description": "a small project of a twitter bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pamepeixinho/twitter-bot.git"
+  },
+  "keywords": [
+    "twitter",
+    "bot"
+  ],
+  "author": "@pamepeixinhp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pamepeixinho/twitter-bot/issues"
+  },
+  "homepage": "https://github.com/pamepeixinho/twitter-bot#readme",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  }
+}
