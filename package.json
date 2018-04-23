@@ -4,7 +4,7 @@
   "description": "a small project of a twitter bot",
   "main": "src/index.js",
   "scripts": {
-    "lint": "eslint"
+    "lint": "eslint -- ."
   },
   "repository": {
     "type": "git",
