@@ -4,7 +4,7 @@
   "description": "a small project of a twitter bot",
   "main": "src/index.js",
   "scripts": {
-    "test": "test"
+    "lint": "eslint -- ."
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,17 @@
   "dependencies": {
     "dotenv": "^5.0.1",
     "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "env": {
+      "node": true,
+      "es6": true
+    }
   }
 }
