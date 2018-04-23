@@ -9,15 +9,13 @@ const client = new Twitter({
   access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
 });
 
-const stream = client.stream('statuses/filter', { track:'#LittleFishBot' });
+const stream = client.stream('statuses/filter', { track: '#LittleFishBot' });
 
 stream.on('data', (event) => {
-
   client.post('favorites/create', { id: event.id_str }, (error, response) => {
-    if(error) throw error;
-    console.log('Tweet ID: ' + response.id_str + ' Liked! - "' + response.text + '"');
+    if (error) throw error;
+    console.log(`Tweet ID: ${response.id_str} Liked! - "${response.text}"`);
   });
-
 });
 
 stream.on('error', (error) => {
