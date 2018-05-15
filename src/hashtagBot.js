@@ -11,8 +11,7 @@ const hashtagBot = (client) => {
   });
 
   stream.on('error', (error) => {
-    console.log('--error--');
-    throw error;
+    console.log('--error--', error);
   });
 };
 
