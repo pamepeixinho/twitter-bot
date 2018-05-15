@@ -2,8 +2,8 @@
   "name": "twitter-bot",
   "version": "1.0.0",
   "description": "a small project of a twitter bot",
-  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "lint": "eslint -- ."
   },
   "repository": {
